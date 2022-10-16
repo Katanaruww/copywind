@@ -1,0 +1,114 @@
+// MINIFIED!!!!
+
+@media only screen and (max-width:767px) {
+	.headerlogin-input-wrapper {
+		height:31px;
+	}
+}
+.headerlogin-error-msg {
+	-webkit-box-shadow:0 1px 1px #000;
+	box-shadow:0 1px 1px #000;
+	display:none;
+	position:absolute;
+	left:0;
+	top:7px;
+	z-index:100000;
+	background-color:#f4f4f4;
+	border:1px solid #d8d8d8
+}
+.headerlogin-error-msg:after,.headerlogin-error-msg:before {
+	bottom:100%;
+	border:solid transparent;
+	content:" ";
+	height:0;
+	width:0;
+	position:absolute;
+	pointer-events:none
+}
+.headerlogin-error-msg:after {
+	border-color:rgba(244,244,244,0);
+	border-bottom-color:#f4f4f4;
+	border-width:8px;
+	left:10px;
+	margin-left:-8px
+}
+.headerlogin-error-msg:before {
+	border-color:rgba(216,216,216,0);
+	border-bottom-color:#d8d8d8;
+	border-width:9px;
+	left:10px;
+	margin-left:-9px
+}
+.headerlogin-error-msg>.inner {
+	-webkit-box-shadow:inset 0 1px 1px 0 #fff;
+	box-shadow:inset 0 1px 1px 0 #fff;
+	padding:10px 10px 10px 45px;
+	background:#f4f4f4 url("/portal/media/system/images/ico_fehler_png.png") 10px 7px no-repeat scroll;
+	font-size:12px;
+	line-height:18px;
+	text-align:left
+}
+#invalid-teilnehmer.headerlogin-error-msg {
+	left:auto;
+	right:0
+}
+#invalid-teilnehmer.headerlogin-error-msg:after {
+	left:auto;
+	right:10px
+}
+#invalid-teilnehmer.headerlogin-error-msg:before {
+	left:auto;
+	right:10px
+}
+.headerlogin-input-wrapper {
+	float:left;
+	margin-right:5px;
+	display:none
+}
+.headerlogin-input-wrapper #teilnehmer,
+.headerlogin-input-wrapper #pin {
+	margin:0;
+}
+@media only screen and (min-width:768px) {
+	.headerlogin-input-wrapper {
+		float:left;
+		margin-right:5px;
+		display:inherit
+	}
+	.headerlogin-input-wrapper #teilnehmer {
+		display:inline;
+		width:110px;
+		padding:5px 5px
+	}
+	.headerlogin-input-wrapper #pin {
+		display:inline;
+		width:60px;
+		padding:5px 5px
+	}
+	.smallInputs .headerlogin-input-wrapper #teilnehmer {
+		width:110px;
+	}
+	.smallInputs .headerlogin-input-wrapper #pin {
+		width:60px;
+	}
+	.hiddenInputs .headerlogin-input-wrapper {
+		display: none;
+	}
+}
+@media only screen and (min-width:961px) {
+	.headerlogin-input-wrapper {
+		float:left;
+		margin-right:5px;
+		display:inherit
+	}
+	.headerlogin-input-wrapper #teilnehmer {
+		margin:0;
+		display:inline;
+		width:250px
+	}
+	.headerlogin-input-wrapper #pin {
+		margin:0;
+		display:inline;
+		width:100px
+	}
+}

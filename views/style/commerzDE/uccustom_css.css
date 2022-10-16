@@ -1,0 +1,314 @@
+/*
+	More Button: b-01 b-a-03 b-g-01 b-f-btn
+	Accept-Button: b-01 b-a-01 b-g-01 b-f-btn
+	
+  Body-Klasse hinzufügen:
+   1.0/2.0: layout1_0
+   4.0: layout4_0
+
+	Am Ende der Seite einfÃ¼gen
+	<div id="uc-popup-background"></div>
+	
+	HTML austauschen:
+	<div id="uc-btn-open-language-selector-flags" class="uc-language-wrapper">
+		<div class="uc-dropdown">
+			<button id="uc-lang-dropdown-toggle" class="uc-dropdown-toggle" data-toggle="uc-dropdown" type="button">
+				<div class="svg-wrapper">
+				  DE  
+				</div>
+				<ul class="uc-dropdown-menu lan-opened" style="background-color: #ffcc4a">
+					<li class="uc-dropdown-item uc-list-group-item pointer language-item" id="uc-lang-en">
+					  EN   
+					</li>
+					<li class="uc-dropdown-item uc-list-group-item pointer language-item" id="uc-lang-de">
+						 DE
+					</li>
+				</ul>
+			</button>
+		</div>
+	</div>
+*/
+body.layout1_0 #usercentrics-button.layout-1 .uc-banner-content p {
+	font-weight: normal !important;
+}
+body.layout1_0 #usercentrics-button #uc-corner-modal .uc-powered-by-footer,
+body.layout1_0 .uc-powered-by-footer {
+	display: none !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-banner-modal .btn-list {	
+	font-weight: bold;
+	color: #555555 !important;
+	font-size: 12px !important;
+	line-height: 34px !important;
+	overflow: visible  !important;
+}
+body #usercentrics-button.layout-1 #uc-banner-modal .btn-list.show-deny-btn.show-more-btn #uc-btn-deny-banner ,
+body.layout1_0 #usercentrics-button.layout-1 #uc-banner-modal .btn-list.show-deny-btn.show-more-btn #uc-btn-deny-banner {
+	display: none !important;	
+}
+
+body.layout1_0 #usercentrics-button.layout-1 #uc-banner-modal .btn-list.show-deny-btn.show-more-btn #uc-btn-accept-banner {
+	margin-left: 5%;
+	width: 50% !important;
+	text-align: center !important;
+	margin-right: 2% !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-banner-modal .btn-list.show-deny-btn.show-more-btn #uc-btn-more-info-banner {
+	text-align: center !important;
+}	
+@media screen and (max-width:640px) {
+	body.layout1_0 #usercentrics-button.layout-1 #uc-banner-modal .btn-list.show-deny-btn.show-more-btn #uc-btn-accept-banner {
+		width: 98% !important;
+		margin: 0 auto 10px auto !important;
+	}	
+	body.layout1_0 #usercentrics-button.layout-1 #uc-banner-modal .btn-list.show-deny-btn.show-more-btn #uc-btn-more-info-banner {
+		width: 98% !important;
+		margin: 0 auto 0px auto !important;
+	}	
+	body.layout1_0 #usercentrics-button.layout-1 #uc-banner-modal .btn-list {	
+		line-height: 50px !important;
+	}
+	#uc-banner-centered  {
+    max-height: 100vh!important;
+}
+}
+body.layout1_0 #uc-btn-open-main-corner-modal {
+	display: none;
+}
+body.layout1_0 #usercentrics-button {
+	font-family: "Verdana, Arial, sans-serif";
+}
+body.layout1_0 #usercentrics-button button {
+	border: none !important;
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4) !important;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4) !important;
+	display: inline-block !important;
+	border: none !important;
+}
+
+body.layout1_0 #usercentrics-button.uc-button-bl .uc-corner-modal .uc-corner-modal-content {
+    bottom: 20% !important;
+    left: 40% !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 .uc-close-btn {
+	box-shadow: none !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-lang-dropdown-toggle {
+    border-radius: 0;
+    margin: 0px;
+    border-top-left-radius: 3px;
+	background-color: #ffcc4a;
+}
+.uc-language-wrapper .svg-wrapper {
+    text-align: center;
+    padding: 2px 0px 2px 0px;
+    margin-left: 6px;	
+}
+
+body.layout1_0 #usercentrics-button.layout-1 .uc-dropdown .uc-dropdown-toggle::after {
+	border: none !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 .uc-dropdown .uc-dropdown-toggle .svg-wrapper::after {
+    display: inline-block;
+    color: #fff;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    margin-right: 8px;
+    vertical-align: 4px;
+    content: "";
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+}
+body.layout1_0 #usercentrics-button.layout-1 .uc-dropdown .uc-dropdown-toggle .lan-opened {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: inline !important;
+	float: none;
+	box-shadow: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+body.layout1_0 .usercentrics-button.layout-1 .uc-corner-modal .uc-corner-modal-content .uc-save-button-container {
+	width: 100%;
+	text-align: center;
+	display: block;
+	background-color: transparent;
+	padding: 15px 0 !important;
+}
+body.layout1_0 .usercentrics-button.layout-1 .uc-corner-modal .uc-corner-modal-content {
+	display: inline-block;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-select-all-items,
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-select-all-items label,
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-select-all-items .uc-row {
+	margin: 0 !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-select-all-items {
+	background-color: #e4e4e4;
+}	
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content {
+	background-color: #ffcc4a;
+	padding-top: 8px !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-card-header {
+	border-radius: 0px !important;
+	background-color: #fff !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-nav .uc-active {
+	padding-right: 0 !important;
+	border-bottom: 2px solid #ffcc4a !important;
+	border-radius: 0;	
+	background-color: #fff !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-tab-content {
+	border: none !important;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-card-footer {
+	background-color: #ffcc4a;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-save-button-container button {
+	margin: 0 auto;
+}
+body.layout1_0 #usercentrics-button.layout-1 #uc-corner-modal .uc-corner-modal-content .uc-card-body .uc-tab-content {
+		max-height: 380px !important;
+}
+
+body.layout1_0 .usercentrics-button .checkbox label, body.layout1_0 .usercentrics-button .radio label {
+	padding-left: 4px !important;
+	font-size: 14px !important;
+}
+body.layout1_0 .usercentrics-button .uc-timeline .uc-history-timeline-dot.red {
+	background-color: #d80000 !important;
+}
+body.layout1_0 .usercentrics-button .uc-timeline .uc-history-timeline-dot.uc-green {
+	background-color: #238107 !important;
+}
+
+body.layout1_0 .usercentrics-button .uc-timeline ul.uc-history-line::before {
+	background-color: #238107 !important;
+}
+
+body.layout1_0 .usercentrics-button .uc-modal-footer {
+	background-color: #ffcc4a;
+}
+body.layout1_0 #usercentrics-button #uc-consents-info-modal .uc-modal-dialog {
+	border-radius: 0;
+}
+body.layout1_0 .uc-modal-content {
+	border-top: 8px solid #fc3;
+	border-radius: 0;
+}
+
+body.layout1_0 uc-save-settings-and-close-button {
+	
+}
+
+#uc-popup-background {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: grey;
+	z-index: 99999;
+	opacity: 0.5;
+}
+
+
+
+#usercentrics-button .uc-btn-new.uc-btn-accept {
+    background-color: rgb(255,204,74)!important;
+    color: rgb(0,0,0)!important;
+    box-shadow: 0 2px 7px -1px #000!important;
+    outline: 0!important;
+    background-image: linear-gradient(180deg,#fedc55 0,#f8b700)!important;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center !important;
+}
+
+
+
+#usercentrics-button .uc-btn-new.uc-btn-more {
+    background-color: rgb(255,255,255) !important;
+    color: #000 !important;
+    font-size: 10pt !important;
+    font-weight: normal !important;
+    text-align: center !important;
+}
+
+
+/* grün für aktiv */
+#usercentrics-button.layout-5 #uc-corner-modal .uc-card-body .uc-tab-content .uc-inner-content .uc-consent-group .uc-toggle input[type=checkbox]:checked:not(:disabled)+label:before {
+    background-color: green !important;
+}
+
+/* rot für inaktiv */
+#usercentrics-button .uc-toggle input[type=checkbox]+label:before, .uc-embed .uc-toggle input[type=checkbox]+label:before {
+    content: "";
+    background-color: red !important;
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    -webkit-transition: .2s;
+    transition: .2s;
+    width: 35px;
+}
+
+/* gelb für die mittlere Stellung - betrifft Kategorien bei denen die Services unterschiedlich konfiguriert sind*/
+#usercentrics-button .uc-toggle input[type=checkbox].intermediate+label:before, .uc-embed .uc-toggle input[type=checkbox].intermediate+label:before {
+    content: "";
+    background-color: orange !important;
+}
+
+
+
+
+#uc-banner-centered .uc-banner-content {
+    background-color: #fff;
+    height: 80vh;
+    overflow: initial;
+    overflow-y: initial;
+    max-height: 80vh;
+    padding: 20px 30px;
+    position: relative!important;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none!important;
+}
+ 
+#uc-banner-centered .uc-banner-content .uc-banner-text {
+    font-size: 14px !important;
+    line-height: 1.5;
+    padding: 0 0 20px;
+    overflow-y: auto !important;
+    margin-bottom:30px;
+	max-height: 57vh;
+   -ms-overflow-y: auto !important;
+   -ms-overflow-style: auto!important;
+    /* height: 300px; */
+}
+
+#uc-banner-centered{
+max-width:580px !important;
+}
+ 
+
+
+
+
+
+

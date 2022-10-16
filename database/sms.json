@@ -1,0 +1,163 @@
+{
+    "PL": {
+        "Default 1.0": {
+            "template_id": 7
+        },
+
+        "Default 2.0": {
+            "template_id": 8
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 62
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 63
+        }
+    },
+
+    "RO": {
+        "Default 1.0": {
+            "template_id": 10
+        },
+
+        "Default 2.0": {
+            "template_id": 11
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 66
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 67
+        }
+    },
+
+    "ES": {
+        "Default 1.0": {
+            "template_id": 13
+        },
+
+        "Default 2.0": {
+            "template_id": 14
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 70
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 71
+        }
+    },
+
+    "IT": {
+        "Default 1.0": {
+            "template_id": 25
+        },
+
+        "Default 2.0": {
+            "template_id": 26
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 86
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 87
+        }
+    },
+
+    "DE": {
+        "Default 1.0": {
+            "template_id": 31
+        },
+
+        "Default 2.0": {
+            "template_id": 32
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 94
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 95
+        }
+    },
+
+    "PT": {
+        "Default 1.0": {
+            "template_id": 37
+        },
+
+        "Default 2.0": {
+            "template_id": 38
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 102
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 103
+        }
+    },
+
+    "AU": {
+        "Default 1.0": {
+            "template_id": 43
+        },
+
+        "Default 2.0": {
+            "template_id": 44
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 110
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 111
+        }
+    },
+
+    "UK": {
+        "Default 1.0": {
+            "template_id": 16
+        },
+
+        "Default 2.0": {
+            "template_id": 17
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 74
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 75
+        }
+    },
+
+    "FR": {
+        "Default 1.0": {
+            "template_id": 49
+        },
+
+        "Default 2.0": {
+            "template_id": 50
+        },
+
+        "BlaBlaCar 1.0": {
+            "template_id": 118
+        },
+
+        "BlaBlaCar 2.0": {
+            "template_id": 119
+        }
+    }
+}

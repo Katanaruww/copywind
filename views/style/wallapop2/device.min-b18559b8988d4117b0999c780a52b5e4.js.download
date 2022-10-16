@@ -1,0 +1,1 @@
+var NAMESPACE=NAMESPACE||{};NAMESPACE.DEVICE={getDeviceId:function(){var e=getCookie("device_id");return e||(e=uuidv4(),setCookie(e,MAX_COOKIE_DATE,"device_id","/")),e}};
